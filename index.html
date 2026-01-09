@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head><meta charset="UTF-8"><title>Loja QA Rayrraio</title></head>
+<head>
+    <meta charset="UTF-8">
+    <title>Sua Loja QA</title>
+    <style>
+        .produto { border: 1px solid #ccc; padding: 10px; margin: 10px; display: inline-block; width: 200px; text-align: center; }
+        #carrinho-contagem { font-weight: bold; color: green; }
+    </style>
+</head>
 <body>
-    <h1>🛒 Meu E-commerce de Teste</h1>
-    <input type="text" id="user" placeholder="Usuário"><br>
-    <input type="password" id="pass" placeholder="Senha"><br>
-    <button id="btn-login" onclick="alert('Login efetuado!')">Entrar</button>
+    <h1>🛒 Marketplace de Automação</h1>
+    <div id="login-area">
+        <input type="text" id="user" placeholder="Usuário">
+        <input type="password" id="pass" placeholder="Senha">
+        <button id="btn-login" onclick="document.getElementById('vitrine').style.display='block'">Entrar</button>
+    </div>
+
+    <div id="vitrine" style="display:none;">
+        <h2>Produtos Disponíveis</h2>
+        <div class="produto">
+            <p>Curso de Playwright</p>
+            <button id="add-item" onclick="document.getElementById('carrinho-contagem').innerText='1'">Adicionar ao Carrinho</button>
+        </div>
+        <p>Itens no carrinho: <span id="carrinho-contagem">0</span></p>
+        
+        <hr>
+        <h3>Checkout</h3>
+        <input type="text" id="cartao" placeholder="Número do Cartão">
+        <input type="text" id="nome" placeholder="Nome no Cartão">
+        <button id="btn-finalizar" onclick="alert('Venda Concretizada com Sucesso!')">Finalizar Compra</button>
+    </div>
 </body>
 </html>
