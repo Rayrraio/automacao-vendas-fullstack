@@ -13,7 +13,7 @@
     <div id="login-area">
         <input type="text" id="user" placeholder="Usuário">
         <input type="password" id="pass" placeholder="Senha">
-        <button id="btn-login" onclick="document.getElementById('vitrine').style.display='block'">Entrar</button>
+        <button id="btn-login" onclick="validarLogin()">Entrar</button>
     </div>
 
     <div id="vitrine" style="display:none;">
@@ -30,5 +30,18 @@
         <input type="text" id="nome" placeholder="Nome no Cartão">
         <button id="btn-finalizar" onclick="alert('Venda Concretizada com Sucesso!')">Finalizar Compra</button>
     </div>
+    <script>
+        function validarLogin() {
+        const usuario = document.getElementById('user').value;
+        const senha = document.getElementById('pass').value;
+    
+         // Agora o sistema só libera se os dados estiverem certos!
+         if (usuario === 'admin' && senha === '123') {
+        document.getElementById('vitrine').style.display = 'block';
+        } else {
+        alert('Usuário ou senha incorretos!');
+         }
+    }
+</script>
 </body>
 </html>
