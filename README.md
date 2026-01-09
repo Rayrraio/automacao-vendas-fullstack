@@ -1,25 +1,24 @@
-# 🛒 Marketplace Automation Project - Playwright & Python
+# 🚀 Automação de Vendas Fullstack
 
-Este projeto é uma demonstração de um fluxo completo de automação de testes **End-to-End (E2E)**. Desenvolvi tanto o Marketplace (Frontend) quanto os scripts de automação para simular uma jornada real de compra.
+Projeto de automação de testes End-to-End (E2E) em uma aplicação de Marketplace.
 
-## 🚀 Funcionalidades Automatizadas
-- [x] **Login**: Validação de acesso à área restrita.
-- [x] **Carrinho**: Adição de produtos ao carrinho de compras.
-- [x] **Checkout**: Preenchimento de dados de pagamento e finalização de venda.
-- [x] **Evidência**: Captura de screenshot automática ao final do teste.
+## 🚀 Tecnologias e Ferramentas
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Playwright](https://img.shields.io/badge/playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
+![Pytest](https://img.shields.io/badge/pytest-%23C90000.svg?style=for-the-badge&logo=pytest&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-## 🛠️ Tecnologias Utilizadas
-- **Linguagem:** Python 3.12
+- **Linguagem:** Python
 - **Framework de Teste:** Playwright
-- **Runner:** Pytest
-- **Ambiente:** GitHub Codespaces (Linux)
+- **Relatórios:** Pytest-html
+- **Frontend:** HTML5 / JavaScript
 
-## 📸 Evidência de Sucesso
-![Resultado do Teste](resultado_venda.png)
+## 🧪 Cenários de Teste
+1. **Fluxo de Venda Completo:** Valida desde o login até o checkout e screenshot final.
+2. **Segurança de Login (Teste Negativo):** Garante que o sistema não permita acesso com credenciais inválidas.
 
-## 📋 Como rodar o projeto
-1. Instale as dependências:
-   ```bash
-   pip install playwright pytest
-   playwright install
-   playwright install-deps
+## 📊 Como rodar os testes
+1. Instale as dependências: `pip install playwright pytest pytest-html`
+2. Instale os navegadores: `playwright install`
+3. Execute: `pytest --html=relatorio.html`
