@@ -1,8 +1,19 @@
 # 🚀 Automação de Vendas Fullstack
 
 Projeto de automação de testes End-to-End (E2E) em uma aplicação de Marketplace.
+<<<<<<< HEAD
 
 ## 🛠️ Tecnologias Utilizadas
+=======
+
+## 🚀 Tecnologias e Ferramentas
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Playwright](https://img.shields.io/badge/playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
+![Pytest](https://img.shields.io/badge/pytest-%23C90000.svg?style=for-the-badge&logo=pytest&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+>>>>>>> a378a8f2d1960f12e8cb9e65fbef31be8dbaae5e
 - **Linguagem:** Python
 - **Framework de Teste:** Playwright
 - **Relatórios:** Pytest-html
@@ -15,4 +26,8 @@ Projeto de automação de testes End-to-End (E2E) em uma aplicação de Marketpl
 ## 📊 Como rodar os testes
 1. Instale as dependências: `pip install playwright pytest pytest-html`
 2. Instale os navegadores: `playwright install`
+<<<<<<< HEAD
 3. Execute: `pytest --html=relatorio.html`
+=======
+3. Execute: `pytest --html=relatorio.html`
+>>>>>>> a378a8f2d1960f12e8cb9e65fbef31be8dbaae5e
