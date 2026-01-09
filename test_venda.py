@@ -23,6 +23,6 @@ def test_fluxo_venda_completo():
         # Lida com o alerta de sucesso
         page.on("dialog", lambda d: d.accept())
         page.click("#btn-finalizar")
-
+        page.screenshot(path="resultado_venda.png")
         print("✅ Teste de ponta a ponta concluído com sucesso!")
         browser.close()
